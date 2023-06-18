@@ -2,6 +2,7 @@ from fastapi import FastAPI, File, UploadFile, Query, applications
 from fastapi.responses import StreamingResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.openapi.docs import get_swagger_ui_html
+from fastapi.middleware.cors import CORSMiddleware
 import whisper
 from whisper.utils import ResultWriter, WriteTXT, WriteSRT, WriteVTT, WriteTSV, WriteJSON
 from whisper import tokenizer
@@ -42,6 +43,14 @@ app = FastAPI(
         "name": "MIT License",
         "url": projectMetadata['License']
     }
+)
+origins = ["*"]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 assets_path = os.getcwd() + "/swagger-ui-assets"
