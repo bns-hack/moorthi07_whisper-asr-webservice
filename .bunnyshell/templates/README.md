@@ -12,7 +12,7 @@
 
    <https://bunnyshell.com>
 
-   Swagger UI from fast api can be accessed from <https://whisper-asr-webservice-whisperasr.bunnyenv.com/docs>
+   Swagger UI from fast api can be accessed from <https://whisper-asr-webservice-whisperasr.bunnyenv.com/docs>  (replace the subdomain name with yours)
 
    To access the api use like this url with audio_file=xyz.wav/mp3 file attached to the body of the request.
 
