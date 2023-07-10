@@ -22,7 +22,7 @@ This docker is made as bunnyshell environment template that you could easyly dep
      You can find more here,
      <https://documentation.bunnyshell.com/docs>
 
-# Whisper ASR Webservice
+## Whisper ASR Webservice
 
 Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multi-task model that can perform multilingual speech recognition as well as speech translation and language identification. For more details: [github.com/openai/whisper](https://github.com/openai/whisper/)
 
