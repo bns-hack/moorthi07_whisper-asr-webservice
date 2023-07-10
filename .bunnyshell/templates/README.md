@@ -12,9 +12,16 @@
 
    <https://bunnyshell.com>
 
-   Swagger UI from fast api can be accessed from <https://whisper-asr-webservice-whisperasr.bunnyenv.com/docs>  (replace the subdomain name with yours)
+## Testing 
+   - go to this swagger UI
+   - click /asr endpoint , and click 'Try Out', then select language = 'en' and they click 'browse' button to upload an audio_file , then click execute.
+   
+   - Swagger UI from fast api can be accessed from <https://whisper-asr-webservice-whisperasr.bunnyenv.com/docs>  (replace the subdomain name with yours)
 
-   To access the api use like this url with audio_file=xyz.wav/mp3 file attached to the body of the request.
+   ![Swagger UI](https://github.com/ahmetoner/whisper-asr-webservice/blob/main/docs/assets/img/swagger-ui.png?raw=true)
+
+
+   - To access the api using a client  like postman / python /JS etc, use this below url with audio_file=xyz.wav/mp3 file attached to the body of the request.
 
     Example API endpoint: 
     <https://whisper-asr-webservice-whisperasr.bunnyenv.com/asr?method=openai-whisper&task=transcribe&encode=true&output=json'>
