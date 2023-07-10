@@ -13,6 +13,7 @@ Checkout
 - ./bunnyshell folder  and  files 
 - bunnyshell.yaml,
 - template.yaml
+- README.md   - This file contains complete cloning this template to Bunnyshell Environment, Deploying and testing
 
 and modify them as needed.
 
