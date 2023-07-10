@@ -19,6 +19,21 @@ This docker is made as bunnyshell environment template that you could easyly dep
     Example API endpoint: 
     <https://whisper-asr-webservice-whisperasr.bunnyenv.com/asr?method=openai-whisper&task=transcribe&encode=true&output=json'>
 
+    This template uses Python - FastAPI framework for REST APIs with UploadFile,  Query. Here is the definition. So, you need to use 'POST' method from your client passing the below parameters. I'll add an example asap here.
+
+    ```
+    @app.post("/asr", tags=["Endpoints"])
+def transcribe(
+    method: Union[str, None] = Query(default="openai-whisper", enum=["openai-whisper", "faster-whisper"]),
+    task : Union[str, None] = Query(default="transcribe", enum=["transcribe", "translate"]),
+    language: Union[str, None] = Query(default=None, enum=LANGUAGE_CODES),
+    initial_prompt: Union[str, None] = Query(default=None),
+    audio_file: UploadFile = File(...),
+    encode : bool = Query(default=True, description="Encode audio first through ffmpeg"),
+    output : Union[str, None] = Query(default="txt", enum=["txt", "vtt", "srt", "tsv", "json"])
+):
+```
+
   ## creating this template in 'Bunnyshell environment"
      Its pretty easier to create a Bunnyshell environment from 'docker compose file' . You can also choose this template from available templates.
      You can find more here,
