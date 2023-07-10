@@ -15,7 +15,7 @@
 ## Testing 
 - Swagger UI from fast api can be accessed from <https://whisper-asr-webservice-whisperasr.bunnyenv.com/docs>  (replace the subdomain name with yours)
    - go to this swagger UI
-   - click /asr endpoint , and click 'Try Out', then select language = 'en' and they click 'Browse / Choose File' button to upload an audio_file , then click execute.
+   - click /asr endpoint , and click 'Try Out', then select language = 'en' and they click 'Browse / Choose File' button to upload `**an audio_file (.wav/.mp3 file)** `, then click execute.
    
    
 
