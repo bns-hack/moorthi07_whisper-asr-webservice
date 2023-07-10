@@ -4,7 +4,9 @@
 ![Licence](https://img.shields.io/github/license/ahmetoner/whisper-asr-webservice.svg)
 
 
-# Bunnyshell Environment template for openai's opensource whisper ai api with python fastapi Speech to Text transcription.
+# Bunnyshell Environment template for openai's opensource whisper ai api 
+# Speech to Text Transcription API (Supports Multiple languages)
+## Using python, fastapi.  
 
 `*** You don't need a openai api key for this opensource template. You can use as you like as per the license`
 
