@@ -23,15 +23,15 @@ This docker is made as bunnyshell environment template that you could easyly dep
 
     ```
     @app.post("/asr", tags=["Endpoints"])
-def transcribe(
-    method: Union[str, None] = Query(default="openai-whisper", enum=["openai-whisper", "faster-whisper"]),
-    task : Union[str, None] = Query(default="transcribe", enum=["transcribe", "translate"]),
-    language: Union[str, None] = Query(default=None, enum=LANGUAGE_CODES),
-    initial_prompt: Union[str, None] = Query(default=None),
-    audio_file: UploadFile = File(...),
-    encode : bool = Query(default=True, description="Encode audio first through ffmpeg"),
-    output : Union[str, None] = Query(default="txt", enum=["txt", "vtt", "srt", "tsv", "json"])
-):
+      def transcribe(
+          method: Union[str, None] = Query(default="openai-whisper", enum=["openai-whisper", "faster-whisper"]),
+          task : Union[str, None] = Query(default="transcribe", enum=["transcribe", "translate"]),
+          language: Union[str, None] = Query(default=None, enum=LANGUAGE_CODES),
+          initial_prompt: Union[str, None] = Query(default=None),
+          audio_file: UploadFile = File(...),
+          encode : bool = Query(default=True, description="Encode audio first through ffmpeg"),
+          output : Union[str, None] = Query(default="txt", enum=["txt", "vtt", "srt", "tsv", "json"])
+      ):
 ```
 
   ## creating this template in 'Bunnyshell environment"
