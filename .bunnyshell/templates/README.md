@@ -6,6 +6,8 @@
 
 # Bunnyshell Environment template for openai's opensource whisper ai api with python fastapi Speech to Text transcription.
 
+`*** You don't need a openai api key for this opensource template. You can use as you like as per the license`
+
 This docker is made as bunnyshell environment template that you could easyly deploy to your Kubernetes cluster instantly , stop, start and more. Checkout .bunnyshell folder for bunnyshell.yaml, template.yaml - modify as needed.
 
    <https://bunnyshell.com>
