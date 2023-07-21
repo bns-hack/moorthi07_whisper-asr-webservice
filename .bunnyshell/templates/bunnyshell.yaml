@@ -1,6 +1,6 @@
 kind: Application
 name: whisper-asr-webservice
-gitRepo: 'https://github.com/moorthi07/whisper-asr-webservice.git'
+gitRepo: 'https://github.com/bns-hack/moorthi07_whisper-asr-webservice.git'
 gitBranch: main
 gitApplicationPath: /
 dockerCompose:
